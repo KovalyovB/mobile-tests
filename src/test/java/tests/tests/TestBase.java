@@ -26,20 +26,20 @@ public class TestBase {
         open();
     }
 
-//    @AfterEach
-//    void addAttachments() {
-//        try {
-//            String sessionId = sessionId().toString();
-//            Attach.pageSource();
-//            closeWebDriver();
-//            Attach.addVideo(sessionId);
-//        } catch (Throwable t) {
-//
-//            System.out.println("Не удалось прикрепить артефакты после теста: " + t.getMessage());
-//            try {
-//                closeWebDriver(); // Пытаемся закрыть драйвер еще раз на всякий случай
-//            } catch (Throwable ignored) {
-//            }
-//        }
-//    }
+    @AfterEach
+    void addAttachments() {
+        try {
+            String sessionId = sessionId().toString();
+            Attach.pageSource();
+            closeWebDriver();
+            Attach.addVideo(sessionId);
+        } catch (Throwable t) {
+
+            System.out.println("Не удалось прикрепить артефакты после теста: " + t.getMessage());
+            try {
+                closeWebDriver(); // Пытаемся закрыть драйвер еще раз на всякий случай
+            } catch (Throwable ignored) {
+            }
+        }
+    }
 }
