@@ -65,10 +65,10 @@
 ---
 
 <a id="jenkins"></a>
-## <img src="src/test/java/images/Jenkins.svg" width="25" height="25"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/021-Melnikov-Wikipedia_mobile_autotests/)
+## <img src="src/test/java/images/Jenkins.svg" width="25" height="25"/> Сборка в Jenkins
 
 <p align="center">
-<img src="media/screen/jenkins_main.png" alt="Jenkins Page" width="1000" height="350">
+<img src="src/test/java/images/jenkins_mobile.png" alt="Jenkins Page" width="600" height="350">
 </p>
 
 ---
@@ -79,19 +79,19 @@
 ### Локальный запуск (через эмулятор)
 
 ```bash
-gradle clean local_test -Dhost=local
+gradle clean test -Dhost=local 
 ```
 
 > Для запуска локальных тестов требуются следующие установленные программы на компьютере: Appium Server, Appium и Android Studio
 <p align="center">  
-<img title="AppiumService" src="media/screen/appium_server.png" width="850">  
+<img title="AppiumService" src="src/test/java/images/appium.png" width="850">  
 </p> 
 Пример запуска Appium сервера, с созданием локального порта.
 
 ### Удаленный запуск (через browserstack)
 
 ```bash
-gradle clean browserstack_test -Dhost=browserstack
+clean test -DdeviceHost=browserstack
 ```
 
 ---
@@ -102,7 +102,7 @@ gradle clean browserstack_test -Dhost=browserstack
 ## 🖨️ Основная страница отчёта
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screen/allure_main.png" width="850">  
+<img title="Allure Overview Dashboard" src="media/screen/allure_mobile.png" width="850">  
 </p>  
 
 ## 📄 Тест-кейсы
