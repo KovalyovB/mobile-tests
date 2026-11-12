@@ -16,13 +16,8 @@
 - [Тестовые сценарии](#-тестовые-сценарии)
 - [Архитектура и подход](#-архитектура-и-подход)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
-- [Интеграция с Allure](#-интеграция-с-allure)
-- [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
-- [Интеграция с Jira](#-интеграция-с-jira)
-- [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Видеопример прохождения тестов BrowserStack](#-видеопример-прохождения-тестов-browserstack)
-- [Лицензия](#-лицензия)
-- [Контакты](#-контакты)
+- [Интеграция с Allure](#allure)
+- [Видеопример прохождения тестов BrowserStack](#movie)
 
 ---
 
@@ -68,7 +63,7 @@
 ## <img src="src/test/java/images/Jenkins.svg" width="25" height="25"/> Сборка в Jenkins
 
 <p align="center">
-<img src="src/test/java/images/jenkins_mobile.png" alt="Jenkins Page" width="600" height="350">
+<img src="src/test/java/images/jenkins_mobile.png" alt="Jenkins Page" width="800" height="350">
 </p>
 
 ---
@@ -96,44 +91,27 @@ clean test -DdeviceHost=browserstack
 
 ---
 
-<a id="allureReport"></a>
-## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/> </a>Интеграция с <a target="_blank" href="https://jenkins.autotests.cloud/job/021-Melnikov-Wikipedia_mobile_autotests/allure/">Allure Report</a>
+<a id="allure"></a>
+## <img alt="Allure" height="25" src="src/test/java/images/Allure.svg" width="25"/> Интеграция с Allure Report
 
 ## 🖨️ Основная страница отчёта
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screen/allure_mobile.png" width="850">  
+<img title="Allure Overview Dashboard" src="src/test/java/images/allure_mobile.png" width="850">  
 </p>  
 
 ## 📄 Тест-кейсы
 
 <p align="center">  
-<img title="Allure Tests" src="media/screen/allure_suits.png" width="850">   
+<img title="Allure Tests" src="src/test/java/images/allure_mob_test.png" width="850">   
 </p>
 
 ---
 
-<a id="allure"></a>
-## <img alt="Allure_TO" height="25" src="media/logo/Allure_TO.svg" width="25"/> </a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/3844/dashboards">Allure TestOps</a>
-
-## 🖨️ Основная страница отчёта
-
-<p align="center">  
-<img title="Allure TestOps Dashboard" src="media/screen/allure_to_boards.png" width="850">  
-</p>  
-На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
+<a id="movie"></a>
+## <img alt="Browserstack" height="25" src="src/test/java/images/Browserstack.svg" width="25"/></a> Видеопример выполнения теста c Browserstack
 
 
-## 📄 Авто и Ручные тест-кейсы
-
-<p align="center">  
-<img title="Allure Tests" src="media/screen/allure_to_manual.png" width="850">  
+<p align="center">
+<img title="Browserstack Video" src="src/test/java/images/browserstk.gif" width="300" height="500"  alt="video">   
 </p>
-
----
-
-<a id="jira"></a>
-
-## <img src="media/logo/Jira.svg" width="25" height="25"/> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-978)
-
-Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
