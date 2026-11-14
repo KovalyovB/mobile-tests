@@ -93,7 +93,6 @@ clean test -DdeviceHost=browserstack
 
 <a id="allure"></a>
 ## 📊 [Allure](https://jenkins.qa.guru/view/java_students/job/42_kovalyov_qa_guru_mobile_tests/3/allure/) отчет
-## <img alt="Allure" height="25" src="docs/images/Allure.svg" width="25"/> Интеграция с Allure Report
 
 ## 🖨️ Основная страница отчёта
 
