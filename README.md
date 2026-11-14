@@ -60,7 +60,6 @@
 ---
 
 ## ⚙️ Сборка [Jenkins](https://jenkins.qa.guru/view/java_students/job/42_kovalyov_qa_guru_mobile_tests/3/)
-## <img src="docs/images/Jenkins.svg" width="25" height="25"/> Сборка в Jenkins
 
 <p align="center">
 <img src="docs/images/jenkins_mobile.png" alt="Jenkins Page" width="800" height="350">
